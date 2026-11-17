@@ -5,6 +5,11 @@ import Footer from './components/Footer/index.jsx'
 import Planos from './components/planos/index.jsx'
 import Produtos from './components/Produtos/index.jsx'
 
+import imgCachorro from './assets/cachorro.webp';
+import imgGato from './assets/gato.webp';
+import imgPassaro from './assets/passaro.webp';
+import imgOutros from './assets/outros.webp';
+
 const THEME_STORAGE_KEY = 'lambao-petshop-theme'
 
 function App() {
@@ -46,22 +51,22 @@ function App() {
       <h2 className="categoria">Categorias</h2>
       <div className="categorias">
         <article className="categoria-item">
-          <img src="src/assets/cachorro.webp" alt="Cachorro" />
+          <img src={imgCachorro} alt="Cachorro" />
           <span>Cachorro</span>
           <p>Brinquedos, ração, produtos higiênicos e roupas</p>
         </article>
         <article className="categoria-item">
-          <img src="src/assets/gato.webp" alt="Gato" />
+          <img src={imgGato} alt="Gato" />
           <span>Gato</span>
           <p>Areia higiênica, brinquedos e ração</p>
         </article>
         <article className="categoria-item">
-          <img src="src/assets/passaro.webp" alt="Pássaro" />
+          <img src={imgPassaro} alt="Pássaro" />
           <span>Pássaro</span>
           <p>Gaiolas, alimentação, acessórios e brinquedos</p>
         </article>
         <article className="categoria-item">
-          <img src="src/assets/outros.webp" alt="Outros animais" />
+          <img src={imgOutros} alt="Outros animais" />
           <span>Outros</span>
           <p>Produtos especiais para todo tipo de pet</p>
         </article>
