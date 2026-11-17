@@ -1,0 +1,141 @@
+.planos-container {
+  margin: 0 0 78px;
+  padding: clamp(24px, 5vw, 46px);
+  border: 1px solid #d8eef7;
+  border-radius: 28px;
+  background: linear-gradient(145deg, #eaf8fd, #f8fcfd 70%);
+}
+
+.planos-cabecalho {
+  max-width: 720px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.planos-cabecalho p {
+  margin-bottom: 0;
+}
+
+.planos-lista {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 18px;
+}
+
+.plano-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 22px 22px;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  background: var(--color-surface);
+  box-shadow: 0 8px 24px rgb(38 59 74 / 5%);
+}
+
+.plano-card h3 {
+  margin: 0 0 6px;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.plano-subtitulo {
+  min-height: 48px;
+  margin-bottom: 16px;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.plano-preco {
+  margin-bottom: 20px;
+  color: var(--color-ink);
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.plano-preco span {
+  font-size: 1rem;
+}
+
+.plano-preco small {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.plano-beneficios {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 24px;
+  padding: 0;
+  color: var(--color-text);
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+.plano-beneficios li {
+  line-height: 1.45;
+}
+
+.plano-card .plano-botao {
+  width: 100%;
+  margin-top: auto;
+  background: var(--color-blue-light);
+  color: var(--color-blue-dark);
+}
+
+.plano-card .plano-botao:hover {
+  background: #d3eff9;
+}
+
+.plano-card.destaque {
+  border: 2px solid var(--color-blue);
+  box-shadow: 0 14px 34px rgb(40 124 157 / 13%);
+}
+
+.tag-popular {
+  align-self: flex-start;
+  margin: -5px 0 15px;
+  padding: 6px 11px;
+  border-radius: 99px;
+  background: var(--color-yellow);
+  color: var(--color-ink);
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.plano-card .botao-destaque {
+  background: var(--color-yellow);
+  color: var(--color-ink);
+}
+
+.plano-card .botao-destaque:hover {
+  background: #ffc629;
+}
+
+:root[data-theme="dark"] .planos-container {
+  border-color: var(--color-border);
+  background: linear-gradient(145deg, #203945, #1a2c36 70%);
+}
+
+@media (max-width: 850px) {
+  .planos-lista {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .plano-subtitulo {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .planos-container {
+    margin-bottom: 58px;
+    border-radius: 22px;
+  }
+}
